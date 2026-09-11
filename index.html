@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ActioCognita LLC</title>
+<meta name="description" content="ActioCognita LLC — software development, consulting, and product development.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="ActioCognita LLC">
+<meta property="og:description" content="Software development, consulting, and product development.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111111'/><path d='M9 22.5 16 9l7 13.5' fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --ink: #16161a;
+    --muted: #5d5d68;
+    --rule: #d8d5cf;
+    --accent: #16161a;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --ink: #f2f1ee;
+      --muted: #9a9aa4;
+      --rule: #2c2c31;
+      --accent: #f2f1ee;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    padding: clamp(2rem, 8vw, 6rem);
+  }
+
+  .block {
+    max-width: 34rem;
+  }
+
+  .mark {
+    display: block;
+    width: 1.75rem;
+    height: auto;
+    margin-bottom: clamp(1.75rem, 5vw, 2.75rem);
+    color: var(--accent);
+    opacity: .9;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.1rem, 6.5vw, 3.25rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+
+  h1 .llc {
+    font-weight: 400;
+    font-size: 0.42em;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-top: 0.9em;
+  }
+
+  .lede {
+    margin: clamp(1.5rem, 4vw, 2.25rem) 0 0;
+    padding-top: clamp(1.5rem, 4vw, 2.25rem);
+    border-top: 1px solid var(--rule);
+    font-size: clamp(1.02rem, 2.4vw, 1.175rem);
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 26rem;
+    text-wrap: pretty;
+  }
+
+  .contact {
+    margin-top: clamp(1.75rem, 4vw, 2.5rem);
+  }
+
+  .contact a {
+    --line: color-mix(in srgb, var(--ink) 28%, transparent);
+    color: var(--ink);
+    font-size: clamp(1rem, 2.4vw, 1.1rem);
+    text-decoration: none;
+    background-image: linear-gradient(var(--line), var(--line));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 1px;
+    padding-bottom: 2px;
+    transition: background-size .25s ease, color .25s ease;
+  }
+
+  .contact a:hover,
+  .contact a:focus-visible {
+    --line: var(--ink);
+    background-size: 100% 1px;
+  }
+
+  .contact a:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  footer {
+    padding: clamp(1.25rem, 8vw, 6rem);
+    padding-top: 0;
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="block">
+      <svg class="mark" viewBox="0 0 32 32" role="img" aria-label="ActioCognita">
+        <path d="M5 25 16 5l11 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10.5 19h11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+
+      <h1>ActioCognita<span class="llc">Limited Liability Company</span></h1>
+
+      <p class="lede">Software development, consulting, and product development.</p>
+
+      <p class="contact">
+        <a href="mailto:admin@actiocognita.com">admin@actiocognita.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 ActioCognita LLC</footer>
+</body>
+</html>
