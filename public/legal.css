@@ -1,0 +1,98 @@
+/* The Privacy Policy and Terms pages. Same colours and type as index.html. */
+:root {
+  --bg: #fbfaf8;
+  --ink: #16161a;
+  --muted: #5d5d68;
+  --rule: #d8d5cf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e0e10;
+    --ink: #f2f1ee;
+    --muted: #9a9aa4;
+    --rule: #2c2c31;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+header { padding-top: clamp(1.5rem, 5vw, 3rem); }
+
+.home {
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+main { padding-top: clamp(1.5rem, 5vw, 3rem); padding-bottom: 3rem; }
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.updated { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+
+.lede {
+  margin: 1.75rem 0 0;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--rule);
+  font-size: 1.075rem;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.toc { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1.25rem; }
+
+section { margin-top: 2.75rem; padding-top: 1.75rem; border-top: 1px solid var(--rule); }
+
+h2 { margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.015em; }
+
+h3 { margin: 1.75rem 0 0.25rem; font-size: 1.0625rem; font-weight: 600; }
+
+p { margin: 0.25rem 0 0; text-wrap: pretty; }
+
+.short { margin-top: 0.75rem; font-weight: 500; }
+
+a { color: var(--ink); text-decoration-color: color-mix(in srgb, var(--ink) 35%, transparent); text-underline-offset: 3px; }
+
+a:hover, a:focus-visible { text-decoration-color: var(--ink); }
+
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+footer a { color: var(--muted); }
